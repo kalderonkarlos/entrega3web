@@ -1,0 +1,147 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hwb(43 31% 23%);
+    color: #2d6a3d;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #7e161f;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #12792e;
+}
+
+/* Botones circulares */
+.btn {
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary, .vote-btn {
+    border: 2px solid #61656a;
+    background-color: rgb(220, 229, 203);
+    color: #10cb6e;
+}
+
+.btn-primary:hover, .vote-btn:hover {
+    background-color: #ca1688;
+    color: white;
+}
+
+.btn-danger, .reset-btn {
+    border: 2px solid rgb(31, 5, 5);
+    background-color: white;
+    color: rgb(66, 12, 12);
+}
+
+.btn-danger:hover, .reset-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Tarjetas circulares */
+.card {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 15px auto;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* Enlaces de tarjetas */
+.card-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Contenedores */
+.chart-container, .button-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-4 {
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
